@@ -21,6 +21,8 @@ html, body
 {
 	min-height: 100% !important;
 	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 body p
@@ -52,7 +54,7 @@ a:link, a:visited, a:active
 
 #PictureContainer
 {
-	height: 650px;
+	height: 660px;
 	width: 100%;
  	background: url('../images/headerPicture.jpg') no-repeat;
 }
@@ -158,7 +160,6 @@ a:link, a:visited, a:active
 #MenuContainer
 {
 	height: 60px;
-	min-width: 620px;
 	text-align: center;
 	position: relative;
     border-top: 0px solid rgba(90, 85, 110, 0.28);
@@ -179,9 +180,26 @@ a:link, a:visited, a:active
 	#MenuContainer a:hover
 	{
 		color: slategrey;
-	} 
+	}
+
+@media only screen and (max-width: 640px){
+
+
+}
+
 
 /*########### Content ###########*/
+
+@media screen and (max-width: 1000px){
+
+	#ContentContainer {margin-left: 5% !important; margin-right: 5% !important; }
+}
+
+@media screen and (max-width: 950px){
+
+	#textBlock { width: 100% !important;}
+}
+
 
 #ContentContainer
 {
@@ -190,9 +208,14 @@ a:link, a:visited, a:active
 	height: 100%;
 }
 
-@media screen and (max-width: 1000px)
+#projectBlock
 {
-	#ContentContainer {margin-left: 5%; margin-right: 5%; }
+	background-color: #faebd7;
+}
+
+.projectDiv
+{
+
 }
 
 .contentBlock
@@ -208,11 +231,6 @@ a:link, a:visited, a:active
 {
 	text-align: center;
 	margin: 25px 25px;
-}
-
-#projectBlock
-{
-	background-color: #faebd7;
 }
 
 #imageContainer
@@ -285,7 +303,23 @@ a:link, a:visited, a:active
 
 #FooterContainer
 {
-	width: 100%;
-    height: 100px;
+    height: 75px;
     background-color: rgba(39, 34, 62, 1);
+    padding: 25px;
 }
+
+	#FooterContainer ul
+	{
+		margin: 5px 80px 0px 80px;
+	}
+
+	#FooterContainer a:hover
+	{
+		color: slategrey;
+	}
+
+	#FooterContainer p
+	{
+		text-align: center;
+		color: #fff;
+	}
