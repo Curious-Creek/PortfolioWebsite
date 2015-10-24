@@ -1,0 +1,291 @@
+/*########### Fonts ###########*/
+@import url(https://fonts.googleapis.com/css?family=Flamenco);
+
+@font-face {
+	font-family: Arty;
+	src: url('../fonts/Arty_Signature.otf');
+}
+
+*
+{
+	padding: 0;
+	margin:  0;
+}
+
+html
+{
+	height: 100%;
+}
+
+html, body
+{
+	min-height: 100% !important;
+	height: 100%;
+}
+
+body p
+{
+	margin: 0;
+	word-wrap: break-word;
+	font-family: 'Flamenco';
+	font-size: 20px;
+}
+
+a:link, a:visited, a:active
+{
+	color: white;
+	text-decoration: none;
+}
+
+.roundBorder
+{
+	border-radius: 5px;
+}
+
+#BackgroundContainer
+{
+	position: absolute;
+	display: inline-block;
+	background-image: url('../images/noiseBackground.png');
+	background-repeat: repeat;
+}
+
+#PictureContainer
+{
+	height: 650px;
+	width: 100%;
+ 	background: url('../images/headerPicture.jpg') no-repeat;
+}
+
+#HeaderTitel
+{
+	width: 500px;
+	height: 120px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	top: 50%;
+	margin-top: -60px;
+	font-family: 'Flamenco';
+	position: relative;
+	background-color:rgba(211, 211, 211, 0.75);
+	-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+}
+
+	#HeaderTitel h1
+	{
+		font-size: 50px;
+	}
+
+	#HeaderTitel h2
+	{
+		font-size: 30px;
+	}
+
+	#HeaderTitel li
+	{
+		line-height: normal;
+	}
+
+	#HeaderTitel ul
+	{
+		margin: 5px 10px 0px 10px;
+	}
+
+	#HeaderTitel a:hover
+	{
+		color: slategrey;
+	}
+
+/*########### Variable list ###########*/
+
+.row2 li
+{
+	width: 49.5%;
+}
+
+.row3 li
+{
+	width: 32.5%;
+}
+
+.row4 li
+{
+	width: 24.4%;
+}
+
+.row5 li
+{
+	width: 19.5%;
+}
+
+.row6 li
+{
+	width: 16.17%;
+}
+
+.row7 li
+{
+	width: 13.78%;
+}
+
+.row8 li
+{
+	width: 12%;
+}
+
+.horizontal_list ul
+{
+	text-decoration: none;
+}
+
+.horizontal_list li
+{
+	line-height: 60px;
+	display: inline-block;
+}
+
+.horizontal_list a
+{
+	text-align: center;
+	display: block;
+}
+
+/*########### Navigation Bar ###########*/
+
+#MenuContainer
+{
+	height: 60px;
+	min-width: 620px;
+	text-align: center;
+	position: relative;
+    border-top: 0px solid rgba(90, 85, 110, 0.28);
+    border-bottom: 0px solid rgba(90, 85, 110, 0.28);
+	background-color: rgba(39, 34, 62, 1);
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+	#MenuContainer a:link, a:visited, a:active
+	{
+		font-size: 25px;
+		font-family: 'Flamenco';
+		-webkit-transition: color 1s ease 0s;
+	}
+
+	#MenuContainer a:hover
+	{
+		color: slategrey;
+	} 
+
+/*########### Content ###########*/
+
+#ContentContainer
+{
+	margin-left:  15%;
+	margin-right: 15%;
+	height: 100%;
+}
+
+@media screen and (max-width: 1000px)
+{
+	#ContentContainer {margin-left: 5%; margin-right: 5%; }
+}
+
+.contentBlock
+{
+	display: inline-block;
+	width: 100%;
+	min-height: 350px;
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+
+#profileBlock
+{
+	text-align: center;
+	margin: 25px 25px;
+}
+
+#projectBlock
+{
+	background-color: #faebd7;
+}
+
+#imageContainer
+{
+	vertical-align: top;
+	display: inline-block;
+	width: 250px;
+	height: 300px;
+	background-image: url('http://placehold.it/250x300');
+	background-repeat: no-repeat;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+#textBlock
+{
+	width: 50%;
+	display: inline-block;
+	margin: 0px 25px;
+}
+
+#textBlock h1
+{
+	font-variant: normal;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 75px;
+	font-family: Arty;
+}
+
+#textBlock hr
+{
+	margin: auto;
+	width: 25%;
+    border: 0;
+    height: 5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#textBlock p, .thinButton
+{
+	text-align: left;
+}
+
+/*########### Buttons ###########*/
+
+.thinButton
+{
+	width: 100px;
+	height: 40px;
+	border: solid;
+	border-width: 1px;
+	border-color: slategrey;
+	line-height: 40px;
+	font-size: 20px;
+	font-family: 'Flamenco';
+	text-align: center;
+	color: slategrey;
+	-webkit-transition: width 2s ease 0s;
+}
+
+.thinButton:hover
+{
+	color: black;
+	border-color: black;
+	width: 150px;
+	cursor: pointer;
+}
+
+#FooterContainer
+{
+	width: 100%;
+    height: 100px;
+    background-color: rgba(39, 34, 62, 1);
+}
