@@ -200,24 +200,6 @@ a:link, a:visited, a:active
 	#textBlock { width: 100% !important;}
 }
 
-
-#ContentContainer
-{
-	margin-left:  15%;
-	margin-right: 15%;
-	height: 100%;
-}
-
-#projectBlock
-{
-	background-color: #faebd7;
-}
-
-.projectDiv
-{
-
-}
-
 .contentBlock
 {
 	display: inline-block;
@@ -227,54 +209,86 @@ a:link, a:visited, a:active
 	margin-top: 25px;
 }
 
-#profileBlock
+#ContentContainer
 {
-	text-align: center;
-	margin: 25px 25px;
+	margin-left:  15%;
+	margin-right: 15%;
+	height: 100%;
 }
 
-#imageContainer
-{
-	vertical-align: top;
-	display: inline-block;
-	width: 250px;
-	height: 300px;
-	background-image: url('http://placehold.it/250x300');
-	background-repeat: no-repeat;
-	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-}
+	/*########### ProjectBlock ###########*/
 
-#textBlock
-{
-	width: 50%;
-	display: inline-block;
-	margin: 0px 25px;
-}
+	#projectBlock
+	{
+		background-color: #faebd7;
+		text-align: center;
+	}
 
-#textBlock h1
-{
-	font-variant: normal;
-	font-weight: 200;
-	font-style: normal;
-	font-size: 75px;
-	font-family: Arty;
-}
+	#projectBlock h1
+	{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
 
-#textBlock hr
-{
-	margin: auto;
-	width: 25%;
-    border: 0;
-    height: 5px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
+	.projectDiv
+	{
+		height: 200px;
+		width: 33%;
+		position: relative;
+		background-color: black;
+		display: inline-block;
+	}
 
-#textBlock p, .thinButton
-{
-	text-align: left;
-}
+	/*########### ProfileBlock ###########*/
+
+	#profileBlock
+	{
+		text-align: center;
+		margin: 25px 25px;
+	}
+
+	#imageContainer
+	{
+		vertical-align: top;
+		display: inline-block;
+		width: 250px;
+		height: 300px;
+		background-image: url('http://placehold.it/250x300');
+		background-repeat: no-repeat;
+		-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+		box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	}
+
+	#textBlock
+	{
+		width: 50%;
+		display: inline-block;
+		margin: 0px 25px;
+	}
+
+	#textBlock h1
+	{
+		font-variant: normal;
+		font-weight: 200;
+		font-style: normal;
+		font-size: 75px;
+		font-family: Arty;
+	}
+
+	#textBlock hr
+	{
+		margin: auto;
+		width: 25%;
+	    border: 0;
+	    height: 5px;
+	    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	}
+
+	#textBlock p, .thinButton
+	{
+		text-align: left;
+	}
 
 /*########### Buttons ###########*/
 
