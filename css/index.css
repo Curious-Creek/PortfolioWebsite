@@ -233,10 +233,29 @@ a:link, a:visited, a:active
 	.projectDiv
 	{
 		height: 200px;
-		width: 33%;
+		width: 32%;
 		position: relative;
-		background-color: black;
+/*		border-width: 1px;
+		border-style: solid;
+		border-top: none;
+		border-bottom: none;*/
 		display: inline-block;
+		text-align: center;
+	}
+
+	.projectDiv:nth-child(3)
+	{
+		border-style: solid;
+		border-top: 0px;
+		border-bottom: 0px;
+	}
+
+	.scaleImage
+	{
+		margin: auto;
+		display: block;
+		width: auto;
+		max-width: 75%;
 	}
 
 	/*########### ProfileBlock ###########*/
