@@ -250,12 +250,18 @@ a:link, a:visited, a:active
 		border-bottom: 0px;
 	}
 
+	.projectImage
+	{
+		width: 300px;
+		height: 150px;
+	}
+
 	.scaleImage
 	{
 		margin: auto;
 		display: block;
-		width: auto;
-		max-width: 75%;
+/*		width: auto;*/
+		width: 75%;
 	}
 
 	/*########### ProfileBlock ###########*/
