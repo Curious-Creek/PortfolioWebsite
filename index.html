@@ -9,6 +9,9 @@
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/index.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="jquery/functions.js"></script>
 	</head>
 	<body>
 		<div id="BackgroundContainer">
@@ -42,16 +45,16 @@
 			</div>	
 			<div id="MenuContainer">
 			<ul class="horizontal_list row4">
-				<li><a href="#" title="Home">Home</a></li>
-				<li><a href="#" title="About me">About me</a></li>
-				<li><a href="#" title="Being a student">Being a student</a></li>
-				<li><a href="#" title="Internship">Internship</a></li>
+				<li><a href="#profileBlock" title="About me">About me</a></li>
+				<li><a href="#studentBlock" title="Being a student">Being a student</a></li>
+				<li><a href="#internshipBlock" title="Internship">Internship</a></li>
+				<li><a href="#projectBlock" title="Projects">Projects</a></li>
 			</ul>
 			</div>	
 			<div id="ContentContainer">
 				<div class="contentBlock">
 					<div id="profileBlock">
-						<div id="imageContainer" class="roundBorder"></div>
+						<div id="imageContainer" class="roundBoxStyle"></div>
 						<div id="textBlock">				
 							<h1>Max Beekmans</h1>
 							<hr>
@@ -67,22 +70,37 @@
 						</div>	
 					</div>
 				</div>
+
+				<div id="studentBlock" class="contentBlock">
+					<h1 class="dividerText">Being a student</h1>
+				</div>
+
+				<div id="internshipBlock" class="contentBlock">
+					<h1 class="dividerText">Internship</h1>
+				</div>
+
 				<div id="projectBlock" class="contentBlock">
-					<h1>Some projects I worked on</h1>
-					<div class="projectDiv">
-						<img src="images/deslimstemens.jpg" class="scaleImage">
-						<h2>De Slimste Mens</h2>
-					</div>
-					<div class="projectDiv">
-						<img src="http://placehold.it/300x150" class="scaleImage">
-						<h2>Insert Project here</h2>
-					</div>
-					<div class="projectDiv">
-						<img src="http://placehold.it/300x150" class="scaleImage">
-						<h2>Insert Project here</h2>
+					<h1 class="dividerText">Projects</h1>
+					<div id="projectContainer">
+						<div class="projectDiv">
+							<img src="images/deslimstemens.jpg" class="scaleImage roundBoxStyle">
+							<h2>De Slimste Mens</h2>
+							<a href="#" title="More Info"><p>Click here for more info</p></a>
+						</div>
+						<div class="projectDiv">
+							<img src="http://placehold.it/300x150" class="scaleImage roundBoxStyle">
+							<h2>Insert Project here</h2>
+							<a href="#" title="More Info"><p>Click here for more info</p></a>
+						</div>
+						<div class="projectDiv">
+							<img src="http://placehold.it/300x150" class="scaleImage roundBoxStyle">
+							<h2>Insert Project here</h2>
+							<a href="#" title="More Info"><p>Click here for more info</p></a>
+						</div>
 					</div>
 				</div>
 			</div>
+
 			<div id="FooterContainer">
 				<p>Max Beekmans - 2015</p>
 				<ul class="horizontal_list row4">

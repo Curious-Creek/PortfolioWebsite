@@ -6,6 +6,8 @@
 	src: url('../fonts/Arty_Signature.otf');
 }
 
+/*########### Globals ###########*/
+
 *
 {
 	padding: 0;
@@ -22,7 +24,7 @@ html, body
 	min-height: 100% !important;
 	height: 100%;
 	overflow-y: scroll;
-	overflow-x: hidden;
+/*	overflow-x: hidden;*/
 }
 
 body p
@@ -39,9 +41,30 @@ a:link, a:visited, a:active
 	text-decoration: none;
 }
 
-.roundBorder
+.roundBoxStyle
 {
+	-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
 	border-radius: 5px;
+}
+
+.staticBoxStyle
+{
+	-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+}
+
+
+.dividerText 
+{
+	text-align: center;
+	font-family: 'Flamenco';
+	font-weight: normal;
+	color: #fff;
+	background-color: rgba(39, 34, 62, 1);
+	padding: 5px;
 }
 
 #BackgroundContainer
@@ -52,12 +75,7 @@ a:link, a:visited, a:active
 	background-repeat: repeat;
 }
 
-#PictureContainer
-{
-	height: 660px;
-	width: 100%;
- 	background: url('../images/headerPicture.jpg') no-repeat;
-}
+/*########### Header ###########*/
 
 #HeaderTitel
 {
@@ -71,9 +89,6 @@ a:link, a:visited, a:active
 	font-family: 'Flamenco';
 	position: relative;
 	background-color:rgba(211, 211, 211, 0.75);
-	-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
 }
 
 	#HeaderTitel h1
@@ -100,6 +115,13 @@ a:link, a:visited, a:active
 	{
 		color: slategrey;
 	}
+
+#PictureContainer
+{
+	height: 660px;
+	width: 100%;
+ 	background: url('../images/headerPicture.jpg') no-repeat;
+}
 
 /*########### Variable list ###########*/
 
@@ -205,7 +227,7 @@ a:link, a:visited, a:active
 	display: inline-block;
 	width: 100%;
 	min-height: 350px;
-	margin-bottom: 25px;
+	margin-bottom: 150px;
 	margin-top: 25px;
 }
 
@@ -218,16 +240,21 @@ a:link, a:visited, a:active
 
 	/*########### ProjectBlock ###########*/
 
+	#projectContainer
+	{
+		margin-top: 20px;
+	}
+
+		#projectContainer h2
+		{
+			margin-top: 5px;
+			font-family: 'Flamenco';
+		}
+
 	#projectBlock
 	{
 		background-color: #faebd7;
 		text-align: center;
-	}
-
-	#projectBlock h1
-	{
-		margin-top: 10px;
-		margin-bottom: 10px;
 	}
 
 	.projectDiv
@@ -235,20 +262,26 @@ a:link, a:visited, a:active
 		height: 200px;
 		width: 32%;
 		position: relative;
-/*		border-width: 1px;
-		border-style: solid;
-		border-top: none;
-		border-bottom: none;*/
 		display: inline-block;
 		text-align: center;
 	}
 
-	.projectDiv:nth-child(3)
-	{
-		border-style: solid;
-		border-top: 0px;
-		border-bottom: 0px;
-	}
+		.projectDiv:nth-child(2)
+		{
+			border-style: solid;
+			border-top: 0px;
+			border-bottom: 0px;
+		}
+
+		div.projectDiv a:hover
+		{
+			color: slategrey;
+		}
+
+		div.projectDiv a
+		{
+			color: black;
+		}
 
 	.projectImage
 	{
