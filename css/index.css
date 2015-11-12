@@ -116,127 +116,127 @@ a:link, a:visited, a:active
 		color: slategrey;
 	}
 
-#PictureContainer
-{
-	height: 660px;
-	width: 100%;
- 	background: url('../images/headerPicture.jpg') no-repeat;
-}
-
-/*########### Variable list ###########*/
-
-.row2 li
-{
-	width: 49.5%;
-}
-
-.row3 li
-{
-	width: 32.5%;
-}
-
-.row4 li
-{
-	width: 24%;
-}
-
-.row5 li
-{
-	width: 19.5%;
-}
-
-.row6 li
-{
-	width: 16.17%;
-}
-
-.row7 li
-{
-	width: 13.78%;
-}
-
-.row8 li
-{
-	width: 12%;
-}
-
-.horizontal_list ul
-{
-	text-decoration: none;
-}
-
-.horizontal_list li
-{
-	line-height: 60px;
-	display: inline-block;
-}
-
-.horizontal_list a
-{
-	text-align: center;
-	display: block;
-}
-
-/*########### Navigation Bar ###########*/
-
-#MenuContainer
-{
-	height: 60px;
-	text-align: center;
-	position: relative;
-    border-top: 0px solid rgba(90, 85, 110, 0.28);
-    border-bottom: 0px solid rgba(90, 85, 110, 0.28);
-	background-color: rgba(39, 34, 62, 1);
-	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
-	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
-}
-
-	#MenuContainer a:link, a:visited, a:active
+	#PictureContainer
 	{
-		font-size: 25px;
-		font-family: 'Flamenco';
-		-webkit-transition: color 1s ease 0s;
+		height: 660px;
+		width: 100%;
+	 	background: url('../images/headerPicture.jpg') no-repeat;
 	}
 
-	#MenuContainer a:hover
+	/*########### Variable list ###########*/
+
+	.row2 li
 	{
-		color: slategrey;
+		width: 49.5%;
 	}
 
-@media only screen and (max-width: 640px){
+	.row3 li
+	{
+		width: 32.5%;
+	}
+
+	.row4 li
+	{
+		width: 24%;
+	}
+
+	.row5 li
+	{
+		width: 19.5%;
+	}
+
+	.row6 li
+	{
+		width: 16.17%;
+	}
+
+	.row7 li
+	{
+		width: 13.78%;
+	}
+
+	.row8 li
+	{
+		width: 12%;
+	}
+
+	.horizontal_list ul
+	{
+		text-decoration: none;
+	}
+
+	.horizontal_list li
+	{
+		line-height: 60px;
+		display: inline-block;
+	}
+
+	.horizontal_list a
+	{
+		text-align: center;
+		display: block;
+	}
+
+	/*########### Navigation Bar ###########*/
+
+	#MenuContainer
+	{
+		height: 60px;
+		text-align: center;
+		position: relative;
+	    border-top: 0px solid rgba(90, 85, 110, 0.28);
+	    border-bottom: 0px solid rgba(90, 85, 110, 0.28);
+		background-color: rgba(39, 34, 62, 1);
+		-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+	}
+
+		#MenuContainer a:link, a:visited, a:active
+		{
+			font-size: 25px;
+			font-family: 'Flamenco';
+			-webkit-transition: color 1s ease 0s;
+		}
+
+		#MenuContainer a:hover
+		{
+			color: slategrey;
+		}
+
+	@media only screen and (max-width: 640px){
 
 
-}
+	}
 
 
-/*########### Content ###########*/
+	/*########### Content ###########*/
 
-@media screen and (max-width: 1000px){
+	@media screen and (max-width: 1000px){
 
-	#ContentContainer {margin-left: 5% !important; margin-right: 5% !important; }
-}
+		#ContentContainer {margin-left: 5% !important; margin-right: 5% !important; }
+	}
 
-@media screen and (max-width: 950px){
+	@media screen and (max-width: 950px){
 
-	#textBlock { width: 100% !important;}
-}
+		#textBlock { width: 100% !important;}
+	}
 
-.contentBlock
-{
-	display: inline-block;
-	width: 100%;
-	min-height: 350px;
-	margin-bottom: 150px;
-	margin-top: 25px;
-}
+	.contentBlock
+	{
+		display: inline-block;
+		width: 100%;
+		min-height: 350px;
+		margin-bottom: 150px;
+		margin-top: 25px;
+	}
 
-#ContentContainer
-{
-	margin-left:  15%;
-	margin-right: 15%;
-	height: 100%;
-}
+	#ContentContainer
+	{
+		margin-left:  15%;
+		margin-right: 15%;
+		height: 100%;
+	}
 
 	/*########### ProjectBlock ###########*/
 
@@ -293,7 +293,7 @@ a:link, a:visited, a:active
 	{
 		margin: auto;
 		display: block;
-/*		width: auto;*/
+		width: auto;
 		width: 75%;
 	}
 
