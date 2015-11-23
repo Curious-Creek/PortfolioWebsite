@@ -1,0 +1,18 @@
+@import url('css/index.css');
+
+#BackgroundContainer
+{
+	width: 100%;
+	height: 100%;
+	margin-bottom: -125px;
+}
+
+#ContentContainer
+{
+	height: initial;
+}
+
+h2
+{
+	font-size: 50px;
+}

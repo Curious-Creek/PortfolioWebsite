@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>500 Internal Server Error</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Max Beekmans Junior Software developer. On a quest for an intership abroad!">
+		<meta name="author" content="Max Beekmans">
+		<meta name="keywords" content="portfolio, internship, los angeles, software development, student, work, intern, software, engineer">
+		<meta name="googlebot" content="all">
+		<meta name="robots" content="all">
+
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="ErrorPage.css">
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/icon">
+		<link rel="icon" href="../favicon.ico" type="image/icon">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="../jquery/functions.js"></script>
+
+	</head>
+	<body>
+		<div id="BackgroundContainer">
+			<div id="MenuContainer">
+			</div>	
+			<div id="ContentContainer">
+				<div class="contentBlock">
+					<div id="profileBlock">			
+						<h2>Internal Server Error</h2>
+						<p>The server encountered an internal error or misconfiguration and was unable to complete your request</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="FooterContainer">
+				<p>Max Beekmans - 2015</p>
+				<ul class="horizontal_list row4">
+					<li>
+						<a target="_blank" href="https://www.facebook.com/bikkiemax">
+						<i class="fa fa-facebook-square fa-2x"></i>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="mailto:max.beekmans@hotmail.com">
+						<i class="fa fa-envelope-o fa-2x"></i>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://nl.linkedin.com/pub/max-beekmans/108/57b/ab8">
+						<i class="fa fa-linkedin-square fa-2x"></i>
+						</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://github.com/Max-Beekmans">
+						<i class="fa fa-github fa-2x"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>	
+	</body>
+</html>
