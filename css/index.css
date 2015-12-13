@@ -7,28 +7,23 @@
 }
 
 /*########### Globals ###########*/
-
-*
-{
+* {
 	padding: 0;
-	margin:  0;
+	margin: 0;
 }
 
-html
-{
+html {
 	height: 100%;
 }
 
-html, body
-{
+html,
+body {
 	min-height: 100% !important;
 	height: 100%;
-	overflow-y: scroll;
-/*	overflow-x: hidden;*/
+	overflow-y: scroll;/*	overflow-x: hidden;*/
 }
 
-body p
-{
+body p {
 	margin: 0;
 	word-wrap: break-word;
 	font-family: 'Flamenco';
@@ -36,30 +31,27 @@ body p
 	letter-spacing: 1px;
 }
 
-a:link, a:visited, a:active
-{
+a:link,
+a:visited,
+a:active {
 	color: white;
 	text-decoration: none;
 }
 
-.roundBoxStyle
-{
-	-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+.roundBoxStyle {
+	-webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
 	border-radius: 5px;
 }
 
-.staticBoxStyle
-{
-	-webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+.staticBoxStyle {
+	-webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
 }
 
-
-.dividerText 
-{
+.dividerText {
 	text-align: center;
 	font-family: 'Flamenco';
 	font-weight: normal;
@@ -68,8 +60,7 @@ a:link, a:visited, a:active
 	padding: 5px;
 }
 
-#BackgroundContainer
-{
+#BackgroundContainer {
 	position: absolute;
 	display: inline-block;
 	background-image: url('../images/noiseBackground.png');
@@ -77,9 +68,7 @@ a:link, a:visited, a:active
 }
 
 /*########### Header ###########*/
-
-#HeaderTitel
-{
+#HeaderTitel {
 	width: 500px;
 	height: 120px;
 	text-align: center;
@@ -89,285 +78,266 @@ a:link, a:visited, a:active
 	margin-top: -60px;
 	font-family: 'Flamenco';
 	position: relative;
-	background-color:rgba(211, 211, 211, 0.75);
+	background-color: rgba(211, 211, 211, 0.75);
 }
 
-	#HeaderTitel h1
-	{
-		font-size: 50px;
+#HeaderTitel h1 {
+	font-size: 50px;
+}
+
+#HeaderTitel h2 {
+	font-size: 30px;
+}
+
+#HeaderTitel li {
+	line-height: normal;
+}
+
+#HeaderTitel ul {
+	margin: 5px 10px 0px 10px;
+}
+
+#HeaderTitel a:hover {
+	color: slategrey;
+}
+
+#PictureContainer {
+
+	/*height: 660px;*/
+	height: 720px;
+	width: 100%;
+	background: url('../images/headerPicture.jpg') no-repeat;
+}
+
+/*########### Variable list ###########*/
+.row2 li {
+	width: 49.5%;
+}
+
+.row3 li {
+	width: 32.5%;
+}
+
+.row4 li {
+	width: 24%;
+}
+
+.row5 li {
+	width: 19.5%;
+}
+
+.row6 li {
+	width: 16.17%;
+}
+
+.row7 li {
+	width: 13.78%;
+}
+
+.row8 li {
+	width: 12%;
+}
+
+.horizontal_list ul {
+	text-decoration: none;
+}
+
+.horizontal_list li {
+	line-height: 60px;
+	display: inline-block;
+}
+
+.horizontal_list a {
+	text-align: center;
+	display: block;
+}
+
+/*########### Navigation Bar ###########*/
+#MenuContainer {
+	height: 60px;
+	text-align: center;
+	position: relative;
+	border-top: 0px solid rgba(90, 85, 110, 0.28);
+	border-bottom: 0px solid rgba(90, 85, 110, 0.28);
+	background-color: rgba(39, 34, 62, 1);
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#MenuContainer a:link,
+a:visited,
+a:active {
+	font-size: 25px;
+	font-family: 'Flamenco';
+	-webkit-transition: color 1s ease 0s;
+}
+
+#MenuContainer a:hover {
+	color: slategrey;
+}
+
+@media only screen and (max-width:640px) {
+}
+
+/*########### Content ###########*/
+@media screen and (max-width:1080px) {
+	#ContentContainer {
+		margin-left: 5% !important;
+		margin-right: 5% !important;
 	}
 
-	#HeaderTitel h2
-	{
-		font-size: 30px;
+}
+
+@media screen and (max-width:950px) {
+	#textBlock {
+		width: 100% !important;
 	}
 
-	#HeaderTitel li
-	{
-		line-height: normal;
-	}
+}
 
-	#HeaderTitel ul
-	{
-		margin: 5px 10px 0px 10px;
-	}
+.contentText {
+	margin-top: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
 
-	#HeaderTitel a:hover
-	{
-		color: slategrey;
-	}
+.contentBlock {
+	display: inline-block;
+	width: 100%;
+	min-height: 350px;
+	margin-bottom: 150px;
+	margin-top: 25px;
+}
 
-	#PictureContainer
-	{
-		/*height: 660px;*/
-		height: 720px;
-		width: 100%;
-	 	background: url('../images/headerPicture.jpg') no-repeat;
-	}
+.coloredBlock {
+	background-color: #faebd7;
+}
 
-	/*########### Variable list ###########*/
+#ContentContainer {
+	margin-left: 15%;
+	margin-right: 15%;
+	height: 100%;
+}
 
-	.row2 li
-	{
-		width: 49.5%;
-	}
+/*########### ProjectBlock ###########*/
+#projectContainer {
+	margin-top: 20px;
+}
 
-	.row3 li
-	{
-		width: 32.5%;
-	}
+#projectContainer h2 {
+	margin-top: 5px;
+	font-family: 'Flamenco';
+}
 
-	.row4 li
-	{
-		width: 24%;
-	}
+.projectDiv {
+	height: 200px;
+	width: 32%;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
 
-	.row5 li
-	{
-		width: 19.5%;
-	}
+.projectDiv:nth-child(2) {
+	border-style: solid;
+	border-top: 0px;
+	border-bottom: 0px;
+}
 
-	.row6 li
-	{
-		width: 16.17%;
-	}
+div.projectDiv a:hover {
+	color: slategrey;
+}
 
-	.row7 li
-	{
-		width: 13.78%;
-	}
+div.projectDiv a {
+	color: black;
+}
 
-	.row8 li
-	{
-		width: 12%;
-	}
+.projectImage {
+	width: 300px;
+	height: 150px;
+}
 
-	.horizontal_list ul
-	{
-		text-decoration: none;
-	}
+.scaleImage {
+	margin: auto;
+	display: block;
+	width: auto;
+	width: 75%;
+}
 
-	.horizontal_list li
-	{
-		line-height: 60px;
-		display: inline-block;
-	}
+/*########### ProfileBlock ###########*/
+#profileBlock {
+	text-align: center;
+	margin: 25px 25px;
+}
 
-	.horizontal_list a
-	{
-		text-align: center;
-		display: block;
-	}
+#ProfileImageContainer {
+	vertical-align: top;
+	display: inline-block;
+	width: 250px;
+	height: 300px;
+	background-image: url('http://placehold.it/250x300');
+	background-repeat: no-repeat;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
 
-	/*########### Navigation Bar ###########*/
+#textBlock {
+	width: 50%;
+	display: inline-block;
+	margin: 0px 25px;
+}
 
-	#MenuContainer
-	{
-		height: 60px;
-		text-align: center;
-		position: relative;
-	    border-top: 0px solid rgba(90, 85, 110, 0.28);
-	    border-bottom: 0px solid rgba(90, 85, 110, 0.28);
-		background-color: rgba(39, 34, 62, 1);
-		-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
-		-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
-		box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
-	}
+#textBlock h1 {
+	font-variant: normal;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 75px;
+	font-family: Arty;
+}
 
-		#MenuContainer a:link, a:visited, a:active
-		{
-			font-size: 25px;
-			font-family: 'Flamenco';
-			-webkit-transition: color 1s ease 0s;
-		}
+#textBlock hr {
+	margin: auto;
+	width: 25%;
+	border: 0;
+	height: 5px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 
-		#MenuContainer a:hover
-		{
-			color: slategrey;
-		}
+#textBlock p,
+.thinButton {
+	text-align: left;
+}
 
-	@media only screen and (max-width: 640px){
+/*########### studentBlock ###########*/
+#SchoolImageContainer {
+	margin: 25px auto 10px auto;
+	width: 800px;
+	height: 100%;
+}
 
+/*########### InternBlock ###########*/
 
-	}
+#intershipBlock .contentText{
+	text-align: center;
+}
 
+#textBlockIntern{
+	margin-left: 100px;
+	max-width: 50%;
+	display: inline-block;
+}
 
-	/*########### Content ###########*/
-
-	@media screen and (max-width: 1080px){
-
-		#ContentContainer {margin-left: 5% !important; margin-right: 5% !important; }
-	}
-
-	@media screen and (max-width: 950px){
-
-		#textBlock { width: 100% !important;}
-	}
-
-	.contentText
-	{
-		padding-left: 25px;
-		padding-right: 25px;
-	}
-
-	.contentBlock
-	{
-		display: inline-block;
-		width: 100%;
-		min-height: 350px;
-		margin-bottom: 150px;
-		margin-top: 25px;
-	}
-
-	.coloredBlock
-	{
-		background-color: #faebd7;
-	}
-
-	#ContentContainer
-	{
-		margin-left:  15%;
-		margin-right: 15%;
-		height: 100%;
-	}
-
-	/*########### ProjectBlock ###########*/
-
-	#projectContainer
-	{
-		margin-top: 20px;
-	}
-
-		#projectContainer h2
-		{
-			margin-top: 5px;
-			font-family: 'Flamenco';
-		}
-
-	.projectDiv
-	{
-		height: 200px;
-		width: 32%;
-		position: relative;
-		display: inline-block;
-		text-align: center;
-	}
-
-		.projectDiv:nth-child(2)
-		{
-			border-style: solid;
-			border-top: 0px;
-			border-bottom: 0px;
-		}
-
-		div.projectDiv a:hover
-		{
-			color: slategrey;
-		}
-
-		div.projectDiv a
-		{
-			color: black;
-		}
-
-	.projectImage
-	{
-		width: 300px;
-		height: 150px;
-	}
-
-	.scaleImage
-	{
-		margin: auto;
-		display: block;
-		width: auto;
-		width: 75%;
-	}
-
-	/*########### ProfileBlock ###########*/
-
-	#profileBlock
-	{
-		text-align: center;
-		margin: 25px 25px;
-	}
-
-	#ProfileImageContainer
-	{
-		vertical-align: top;
-		display: inline-block;
-		width: 250px;
-		height: 300px;
-		background-image: url('http://placehold.it/250x300');
-		background-repeat: no-repeat;
-		-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-		-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-		box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-	}
-
-	#textBlock
-	{
-		width: 50%;
-		display: inline-block;
-		margin: 0px 25px;
-	}
-
-	#textBlock h1
-	{
-		font-variant: normal;
-		font-weight: 200;
-		font-style: normal;
-		font-size: 75px;
-		font-family: Arty;
-	}
-
-	#textBlock hr
-	{
-		margin: auto;
-		width: 25%;
-	    border: 0;
-	    height: 5px;
-	    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-	}
-
-	#textBlock p, .thinButton
-	{
-		text-align: left;
-	}
-
-	/*########### studentBlock ###########*/
-
-	#SchoolImageContainer
-	{
-		margin: 25px auto 10px auto;
-		width: 800px;
-		height: 100%;
-	}
+#internshipImageContainer{
+	display: inline-block;
+	vertical-align: top;
+	width: 250px;
+	height: 300px;
+	background-image: url('../images/me.jpg');
+}
 
 /*########### Buttons ###########*/
-
-.thinButton
-{
+.thinButton {
 	width: 100px;
 	height: 40px;
 	border: solid;
@@ -381,33 +351,59 @@ a:link, a:visited, a:active
 	-webkit-transition: width 2s ease 0s;
 }
 
-.thinButton:hover
-{
+.thinButton:hover {
 	color: black;
 	border-color: black;
 	width: 150px;
 	cursor: pointer;
 }
 
-#FooterContainer
-{
-    height: 75px;
-    background-color: rgba(39, 34, 62, 1);
-    padding: 25px;
+#BackUpButton {
+	position: fixed;
+	top: 40%;
+	right: 2px;
+	z-index: 999;
 }
 
-	#FooterContainer ul
-	{
-		margin: 5px 80px 0px 80px;
-	}
+#BackUpButton a { 
+  display: block; 
+  background-color: rgba(39, 34, 62, 1);
+  height: 25px; 
+  width: 100px; 
+  padding: 8px 16px;
+  color: #fff; 
+  font-family: Arial, sans-serif; 
+  font-size: 25px; 
+  font-weight: bold; 
+  font-family: flamenco;
+  text-decoration: none; 
+  border-top: solid 1px #333;
+  border-bottom: solid 1px #333;
+  border-left: solid 1px #333;
+}
 
-	#FooterContainer a:hover
-	{
-		color: slategrey;
-	}
+#BackUpButton a:hover { 
+  -webkit-transition: background-color 1s ease 0s;
+  background: slategrey;
+}
 
-	#FooterContainer p
-	{
-		text-align: center;
-		color: #fff;
-	}
+/*########### Footer ###########*/
+
+#FooterContainer {
+	height: 75px;
+	background-color: rgba(39, 34, 62, 1);
+	padding: 25px;
+}
+
+#FooterContainer ul {
+	margin: 5px 80px 0px 80px;
+}
+
+#FooterContainer a:hover {
+	color: slategrey;
+}
+
+#FooterContainer p {
+	text-align: center;
+	color: #fff;
+}
