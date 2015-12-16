@@ -336,6 +336,26 @@ div.projectDiv a {
 	background-image: url('../images/me.jpg');
 }
 
+/*########### contactBlock ###########*/
+
+#contactBlock{
+	text-align: center;
+}
+
+#contactBlock a{
+	color: slategrey;
+}
+
+#contactBlock .contentText{
+	margin: auto;
+	width: 50%;
+}
+
+#contactBlock p{
+	font-size: 30px;
+	text-align: left;
+}
+
 /*########### Buttons ###########*/
 .thinButton {
 	width: 100px;
