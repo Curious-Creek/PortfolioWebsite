@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
 
 	var $root = $('html, body');
@@ -13,10 +11,12 @@ $(document).ready(function(){
 });
 
 $(document).scroll(function () {
+
 	var y = $(this).scrollTop();
 	if(y > 800) {
 		$('#BackUpButton').fadeIn();
 	} else {
 		$('#BackUpButton').fadeOut();
 	}
+	
 })

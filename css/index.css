@@ -36,6 +36,7 @@ a:visited,
 a:active {
 	color: white;
 	text-decoration: none;
+	text-transform: none;
 }
 
 .roundBoxStyle {
@@ -147,8 +148,13 @@ a:active {
 	display: inline-block;
 }
 
-.horizontal_list a {
+.horizontal_list a{
 	text-align: center;
+	display: block;
+}
+
+.horizontal_list p{
+	text-align: center !important;
 	display: block;
 }
 
@@ -202,11 +208,16 @@ a:active {
 	padding-right: 25px;
 }
 
+.contentText h1{
+	font-family: Flamenco;
+	color: rgba(39, 34, 62, 1);
+}
+
 .contentBlock {
 	display: inline-block;
 	width: 100%;
 	min-height: 350px;
-	margin-bottom: 150px;
+	margin-bottom: 100px;
 	margin-top: 25px;
 }
 
@@ -351,31 +362,51 @@ div.projectDiv a {
 	width: 50%;
 }
 
+#Contact-Info{
+	padding: 50px 50px 50px 50px;
+	margin-bottom: 25px;
+	border-width: 0px 5px 0px 5px;
+	border-color: rgba(39, 34, 62, 1);
+	border-style: solid;
+}
+
 #contactBlock p{
-	font-size: 30px;
 	text-align: left;
 }
 
 /*########### Buttons ###########*/
+.thinButton a{
+	color: black;
+}
+
 .thinButton {
-	width: 100px;
+	width: 200px;
 	height: 40px;
+	background-color: rgba(255,255,255,0.75);
 	border: solid;
 	border-width: 1px;
-	border-color: slategrey;
+	border-color: black !important;
 	line-height: 40px;
 	font-size: 20px;
 	font-family: 'Flamenco';
 	text-align: center;
-	color: slategrey;
+	color: black;
 	-webkit-transition: width 2s ease 0s;
 }
 
 .thinButton:hover {
-	color: black;
-	border-color: black;
-	width: 150px;
+	color: rgba(39, 34, 62, 1);
+	border-color: rgba(39, 34, 62, 1);
+	width: 500px;
 	cursor: pointer;
+}
+
+#exploreWebsite{
+	margin: 75px auto 0 auto;
+}
+
+@media all and (min-height: 780px){
+	#exploreWebsite{display: none;}
 }
 
 #BackUpButton {
@@ -396,7 +427,7 @@ div.projectDiv a {
   font-size: 25px; 
   font-weight: bold; 
   font-family: flamenco;
-  text-decoration: none; 
+  text-decoration: none;
   border-top: solid 1px #333;
   border-bottom: solid 1px #333;
   border-left: solid 1px #333;
