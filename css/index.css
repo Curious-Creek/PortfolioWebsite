@@ -223,6 +223,7 @@ a:active {
 
 .coloredBlock {
 	background-color: #faebd7;
+	padding-bottom: 25px;
 }
 
 #ContentContainer {
@@ -357,6 +358,11 @@ div.projectDiv a {
 	color: slategrey;
 }
 
+#contactBlock h1{
+	font-family: Flamenco;
+	color: rgba(39, 34, 62, 1);
+}
+
 #contactBlock .contentText{
 	margin: auto;
 	width: 50%;
@@ -368,6 +374,12 @@ div.projectDiv a {
 	border-width: 0px 5px 0px 5px;
 	border-color: rgba(39, 34, 62, 1);
 	border-style: solid;
+}
+
+#downloads li:hover
+{
+	-webkit-transition: width 2s ease 0s;
+	background-color: #c5ccd3;
 }
 
 #contactBlock p{
