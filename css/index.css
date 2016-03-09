@@ -348,6 +348,17 @@ div.projectDiv a {
 	background-image: url('../images/me.jpg');
 }
 
+.tldrdiv{
+	font-size: 25px;
+	font-family: 'Flamenco';
+	margin-bottom: 25px;
+}
+
+.tldrtag{
+	color: #006400 !important;
+	background-color: rgba(0,128,0,0.5)
+}
+
 /*########### contactBlock ###########*/
 
 #contactBlock{
