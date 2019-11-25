@@ -12,15 +12,11 @@
 	margin: 0;
 }
 
-html {
-	height: 100%;
-}
-
-html,
-body {
+html, body {
 	min-height: 100% !important;
 	height: 100%;
-	overflow-y: scroll;/*	overflow-x: hidden;*/
+	background-image: url('../images/noiseBackground.png');
+	background-repeat: repeat;
 }
 
 body p {
@@ -31,25 +27,18 @@ body p {
 	letter-spacing: 1px;
 }
 
-a:link,
-a:visited,
-a:active {
-	color: white;
-	text-decoration: none;
-	text-transform: none;
+.parallax-wrapper {
+	width: 100vw;
+	height: 100vh;
+	padding-top: 20vh;
+	box-sizing: border-box;
 }
 
-.roundBoxStyle {
-	-webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
-	border-radius: 5px;
-}
-
-.staticBoxStyle {
-	-webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+.regular-wrapper {
+	width: 100vw;
+	height: 100vh;
+	padding-top: 20vh;
+	background-image: url("../images/me.jpg");
 }
 
 .dividerText {
@@ -61,21 +50,14 @@ a:active {
 	padding: 5px;
 }
 
-#BackgroundContainer {
-	position: absolute;
-	display: inline-block;
-	background-image: url('../images/noiseBackground.png');
-	background-repeat: repeat;
-}
-
 /*########### Header ###########*/
 #HeaderTitel {
 	width: 500px;
-	height: 120px;
+	height: 30%;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	top: 50%;
+	top: 35%;
 	margin-top: -60px;
 	font-family: 'Flamenco';
 	position: relative;
@@ -90,53 +72,23 @@ a:active {
 	font-size: 30px;
 }
 
-#HeaderTitel li {
-	line-height: normal;
-}
-
-#HeaderTitel ul {
-	margin: 5px 10px 0px 10px;
-}
-
 #HeaderTitel a:hover {
 	color: slategrey;
 }
 
 #PictureContainer {
-
-	/*height: 660px;*/
 	height: 720px;
 	width: 100%;
 	background: url('../images/headerPicture.jpg') no-repeat;
 }
 
 /*########### Variable list ###########*/
-.row2 li {
-	width: 49.5%;
+.horizontal_list * {
+	margin-right: 20px;
 }
 
-.row3 li {
-	width: 32.5%;
-}
-
-.row4 li {
-	width: 24%;
-}
-
-.row5 li {
-	width: 19.5%;
-}
-
-.row6 li {
-	width: 16.17%;
-}
-
-.row7 li {
-	width: 13.78%;
-}
-
-.row8 li {
-	width: 12%;
+.horizontal_list :last-child {
+	margin-right: 0px;
 }
 
 .horizontal_list ul {
@@ -148,13 +100,8 @@ a:active {
 	display: inline-block;
 }
 
-.horizontal_list a{
+.horizontal_list a,p {
 	text-align: center;
-	display: block;
-}
-
-.horizontal_list p{
-	text-align: center !important;
 	display: block;
 }
 
@@ -171,9 +118,7 @@ a:active {
 	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-#MenuContainer a:link,
-a:visited,
-a:active {
+#MenuContainer a:link, a:visited, a:active {
 	font-size: 25px;
 	font-family: 'Flamenco';
 	-webkit-transition: color 1s ease 0s;
@@ -192,81 +137,6 @@ a:active {
 		margin-left: 5% !important;
 		margin-right: 5% !important;
 	}
-
-}
-
-@media screen and (max-width:950px) {
-	#textBlock {
-		width: 100% !important;
-	}
-
-}
-
-.contentText {
-	margin-top: 25px;
-	padding-left: 25px;
-	padding-right: 25px;
-}
-
-.contentText h1{
-	font-family: Flamenco;
-	color: rgba(39, 34, 62, 1);
-}
-
-.contentBlock {
-	display: inline-block;
-	width: 100%;
-	min-height: 350px;
-	margin-bottom: 100px;
-	margin-top: 25px;
-}
-
-.coloredBlock {
-	background-color: #faebd7;
-	padding-bottom: 25px;
-}
-
-#ContentContainer {
-	margin-left: 15%;
-	margin-right: 15%;
-	height: 100%;
-}
-
-/*########### ProjectBlock ###########*/
-#projectContainer {
-	margin-top: 20px;
-}
-
-#projectContainer h2 {
-	margin-top: 5px;
-	font-family: 'Flamenco';
-}
-
-.projectDiv {
-	height: 200px;
-	width: 32%;
-	position: relative;
-	display: inline-block;
-	text-align: center;
-}
-
-.projectDiv:nth-child(2) {
-	border-style: solid;
-	border-top: 0px;
-	border-bottom: 0px;
-}
-
-div.projectDiv a:hover {
-	color: slategrey;
-}
-
-div.projectDiv a {
-	color: black;
-}
-
-.projectImage {
-	width: 300px;
-	height: 150px;
 }
 
 .scaleImage {
@@ -274,12 +144,6 @@ div.projectDiv a {
 	display: block;
 	width: auto;
 	width: 75%;
-}
-
-/*########### ProfileBlock ###########*/
-#profileBlock {
-	text-align: center;
-	margin: 25px 25px;
 }
 
 #ProfileImageContainer {
@@ -294,138 +158,10 @@ div.projectDiv a {
 	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-#textBlock {
-	width: 50%;
-	display: inline-block;
-	margin: 0px 25px;
-}
-
-#textBlock h1 {
-	font-variant: normal;
-	font-weight: 200;
-	font-style: normal;
-	font-size: 75px;
-	font-family: Arty;
-}
-
-#textBlock hr {
-	margin: auto;
-	width: 25%;
-	border: 0;
-	height: 5px;
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-
-#textBlock p,
-.thinButton {
-	text-align: left;
-}
-
-/*########### studentBlock ###########*/
-#SchoolImageContainer {
-	margin: 25px auto 10px auto;
-	width: 800px;
-	height: 100%;
-}
-
-/*########### InternBlock ###########*/
-
-#intershipBlock .contentText{
-	text-align: center;
-}
-
-#textBlockIntern{
-	margin-left: 100px;
-	max-width: 50%;
-	display: inline-block;
-}
-
-#internshipImageContainer{
-	display: inline-block;
-	vertical-align: top;
-	width: 250px;
-	height: 300px;
-	background-image: url('../images/me.jpg');
-}
-
-.tldrdiv{
-	font-size: 25px;
-	font-family: 'Flamenco';
-	margin-bottom: 25px;
-}
-
-.tldrtag{
-	color: #006400 !important;
-	background-color: rgba(0,128,0,0.5)
-}
-
-/*########### contactBlock ###########*/
-
-#contactBlock{
-	text-align: center;
-}
-
-#contactBlock a{
-	color: slategrey;
-}
-
-#contactBlock h1{
-	font-family: Flamenco;
-	color: rgba(39, 34, 62, 1);
-}
-
-#contactBlock .contentText{
-	margin: auto;
-	width: 50%;
-}
-
-#Contact-Info{
-	padding: 50px 50px 50px 50px;
-	margin-bottom: 25px;
-	border-width: 0px 5px 0px 5px;
-	border-color: rgba(39, 34, 62, 1);
-	border-style: solid;
-}
-
-#downloads li:hover
-{
-	-webkit-transition: width 2s ease 0s;
-	background-color: #c5ccd3;
-}
-
-#contactBlock p{
-	text-align: left;
-}
-
 /*########### Buttons ###########*/
-.thinButton a{
-	color: black;
-}
-
-.thinButton {
-	width: 200px;
-	height: 40px;
-	background-color: rgba(255,255,255,0.75);
-	border: solid;
-	border-width: 1px;
-	border-color: black !important;
-	line-height: 40px;
-	font-size: 20px;
-	font-family: 'Flamenco';
-	text-align: center;
-	color: black;
-	-webkit-transition: width 2s ease 0s;
-}
-
-.thinButton:hover {
-	color: rgba(39, 34, 62, 1);
-	border-color: rgba(39, 34, 62, 1);
-	width: 500px;
-	cursor: pointer;
-}
-
-#exploreWebsite{
-	margin: 75px auto 0 auto;
+#exploreWebsite {
+	margin: 20px auto 20px auto;
+	box-shadow: none;
 }
 
 @media all and (min-height: 780px){
@@ -464,9 +200,8 @@ div.projectDiv a {
 /*########### Footer ###########*/
 
 #FooterContainer {
-	height: 75px;
 	background-color: rgba(39, 34, 62, 1);
-	padding: 25px;
+	padding: 15px;
 }
 
 #FooterContainer ul {
