@@ -1,0 +1,29 @@
+// Define variable defaults
+
+// Import Bootstrap and BootstrapVue SCSS files
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+/*########### Fonts ###########*/
+@import url(https://fonts.googleapis.com/css?family=Flamenco);
+
+@font-face {
+	font-family: Arty;
+	src: url('./assets/Arty_Signature.otf');
+}
+
+body {
+    font-family: 'Flamenco';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	font-size: 1.25em;
+	letter-spacing: 1px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.arty {
+    font-family: 'Arty';
+    font-size: 4em;
+    font-weight: 400;
+}
