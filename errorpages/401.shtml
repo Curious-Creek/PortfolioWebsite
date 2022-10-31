@@ -1,63 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>401 Authorization Required</title>
+		<title>Max Beekmans</title>
 		<meta charset="utf-8">
-		<meta name="description" content="Max Beekmans Junior Software developer. On a quest for an intership abroad!">
+		<meta name="description" content="Max Beekmans, Software developer.">
 		<meta name="author" content="Max Beekmans">
-		<meta name="keywords" content="portfolio, internship, los angeles, software development, student, work, intern, software, engineer">
+		<meta name="keywords" content="portfolio, software engineer, software development, software developer, work, C# developer, software, engineer">
 		<meta name="googlebot" content="all">
 		<meta name="robots" content="all">
-
-
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="ErrorPage.css">
-
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200..900">
+		<link rel="stylesheet" href="css/index.css">
 		<link rel="shortcut icon" href="favicon.ico" type="image/icon">
-		<link rel="icon" href="../favicon.ico" type="image/icon">
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="../jquery/functions.js"></script>
-
+		<link rel="icon" href="favicon.ico" type="image/icon">
+		<script src="js/index.js"></script>
 	</head>
 	<body>
-		<div id="BackgroundContainer">
-			<div id="MenuContainer">
-			</div>	
-			<div id="ContentContainer">
-				<div class="contentBlock">
-					<div id="profileBlock">			
-						<h2>Authorization Required</h2>
-						<p>This server could not verify that you are authorized to access the document requested. Either you supplied the wrong credentials (e.g., bad password), or your browser doesn't understand how to supply the credentials required.</p>
-					</div>
-				</div>
-			</div>
-
-			<div id="FooterContainer">
-				<p>Max Beekmans - 2015</p>
-				<ul class="horizontal_list row4">
-					<li>
-						<a target="_blank" href="https://www.facebook.com/bikkiemax">
-						<i class="fa fa-facebook-square fa-2x"></i>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="mailto:max.beekmans@hotmail.com">
+		<h2>Authorization Required</h2>
+		<p>This server could not verify that you are authorized to access the document requested. Either you supplied the wrong credentials (e.g., bad password), or your browser doesn't understand how to supply the credentials required.</p>
+		<footer>
+			<p>Max Beekmans - 2022</p>
+			<ul class="horizontal-list">
+				<li>
+					<a target="_blank" href="mailto:max.beekmans@hotmail.com">
 						<i class="fa fa-envelope-o fa-2x"></i>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://nl.linkedin.com/pub/max-beekmans/108/57b/ab8">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://nl.linkedin.com/pub/max-beekmans/108/57b/ab8">
 						<i class="fa fa-linkedin-square fa-2x"></i>
-						</a>
-					</li>
-					<li>
-						<a target="_blank" href="https://github.com/Max-Beekmans">
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://github.com/Max-Beekmans">
 						<i class="fa fa-github fa-2x"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>	
+					</a>
+				</li>
+			</ul>
+		</footer>
 	</body>
 </html>
