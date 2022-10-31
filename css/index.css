@@ -1,218 +1,322 @@
-/*########### Fonts ###########*/
-@import url(https://fonts.googleapis.com/css?family=Flamenco);
-
-@font-face {
-	font-family: Arty;
-	src: url('../fonts/Arty_Signature.otf');
-}
-
-/*########### Globals ###########*/
 * {
 	padding: 0;
 	margin: 0;
+	z-index: 1;
 }
 
 html, body {
-	min-height: 100% !important;
-	height: 100%;
-	background-image: url('../images/noiseBackground.png');
-	background-repeat: repeat;
+	background-color: #374036;	
 }
 
 body p {
-	margin: 0;
+	color: white;
+	font-family: 'League Spartan';
+	font-size: 12pt;
+	font-weight: 400;
 	word-wrap: break-word;
-	font-family: 'Flamenco';
-	font-size: 20px;
 	letter-spacing: 1px;
 }
 
-.parallax-wrapper {
+body h1 {
+	color: white;
+	font-family: 'League Spartan';
+	font-size: 32pt;
+	font-weight: 500;
+}
+
+figcaption {
+	color: white;
+	font-family: 'League Spartan';
+	font-size: 15pt;
+	font-weight: 200;
+	text-align: center;
+}
+
+.horizontal-list {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 10px;
+	list-style-type: none;
+}
+
+.horizontal-list a {
+	color: white;
+}
+
+.horizontal-list a:hover {
+	color: #EFF291;
+}
+
+.images-container {
+	position: absolute;
+	top: 0;
 	width: 100vw;
 	height: 100vh;
-	padding-top: 20vh;
-	box-sizing: border-box;
+	max-width: 100%;
+	z-index: 0;
 }
 
-.regular-wrapper {
-	width: 100vw;
-	height: 100vh;
-	padding-top: 20vh;
-	background-image: url("../images/me.jpg");
+@keyframes imagesFadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
 }
 
-.dividerText {
-	text-align: center;
-	font-family: 'Flamenco';
-	font-weight: normal;
-	color: #fff;
-	background-color: rgba(39, 34, 62, 1);
-	padding: 5px;
-}
-
-/*########### Header ###########*/
-#HeaderTitel {
-	width: 500px;
-	height: 30%;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	top: 35%;
-	margin-top: -60px;
-	font-family: 'Flamenco';
-	position: relative;
-	background-color: rgba(211, 211, 211, 0.75);
-}
-
-#HeaderTitel h1 {
-	font-size: 50px;
-}
-
-#HeaderTitel h2 {
-	font-size: 30px;
-}
-
-#HeaderTitel a:hover {
-	color: slategrey;
-}
-
-#PictureContainer {
-	height: 720px;
+.background-image {
+	position: absolute;
+	left: 0;
 	width: 100%;
-	background: url('../images/headerPicture.jpg') no-repeat;
+	height: 100%;
+	animation-name: imagesFadeInOut;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 40s;
+	filter: brightness(70%) saturate(140%);
 }
 
-/*########### Variable list ###########*/
-.horizontal_list * {
-	margin-right: 20px;
+.images-container img.background-image:nth-of-type(1) {
+	animation-delay: 30s;
 }
 
-.horizontal_list :last-child {
-	margin-right: 0px;
+.images-container img.background-image:nth-of-type(2) {
+	animation-delay: 20s;
 }
 
-.horizontal_list ul {
-	text-decoration: none;
+.images-container img.background-image:nth-of-type(3) {
+	animation-delay: 10s;
 }
 
-.horizontal_list li {
-	line-height: 60px;
-	display: inline-block;
+.images-container img.background-image:nth-of-type(4) {
+	animation-delay: 0;
 }
 
-.horizontal_list a,p {
-	text-align: center;
-	display: block;
+nav {
+	width: 100%;
+	z-index: 2;
+	position: absolute;
+	top: 0;
 }
 
-/*########### Navigation Bar ###########*/
-#MenuContainer {
-	height: 60px;
-	text-align: center;
+@keyframes slide-down {
+	0% {
+        transform: translateY(-100%);
+    } 
+    100% {
+        transform: translateY(0);
+    } 
+}
+
+.fixed-nav {
+	position: fixed;
+	animation: slide-down 1s;
+}
+
+.fixed-nav ul {
+	background-color: rgb(192, 192, 185);
+}
+
+nav ul {
 	position: relative;
-	border-top: 0px solid rgba(90, 85, 110, 0.28);
-	border-bottom: 0px solid rgba(90, 85, 110, 0.28);
-	background-color: rgba(39, 34, 62, 1);
-	-webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+	margin-left: 26%;
+	margin-right: 26%;
+	font-family: 'League Spartan';
+	font-size: 30pt;
+	font-weight: 350;
+	border-bottom-left-radius: 300px;
+	border-bottom-right-radius: 300px;
+	background-color: rgb(192, 192, 185, 0.8);
 }
 
-#MenuContainer a:link, a:visited, a:active {
-	font-size: 25px;
-	font-family: 'Flamenco';
-	-webkit-transition: color 1s ease 0s;
-}
+@media (max-width: 1050px) {
+	nav ul {
+		font-size: 20pt;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
 
-#MenuContainer a:hover {
-	color: slategrey;
-}
+	.background-image {
+		clip-path: inset(150px);
+	}
 
-@media only screen and (max-width:640px) {
-}
-
-/*########### Content ###########*/
-@media screen and (max-width:1080px) {
-	#ContentContainer {
-		margin-left: 5% !important;
-		margin-right: 5% !important;
+	#skills-section {
+		height: 100% !important;
 	}
 }
 
-.scaleImage {
-	margin: auto;
-	display: block;
-	width: auto;
+nav ul li {
+	padding: 10px;
+}
+
+nav ul li a {
+	color: #EFF291;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: white;
+}
+
+nav ul li:first-child {
+	margin-left: 5%;
+}
+
+nav ul li:last-child {
+	margin-right: 5%;
+}
+
+#header-section {
+	position: relative;
+	height: 100vh;
+}
+
+#leader-container {
+	position: absolute;
+	width: 400px;
+	height: 100px;
+	top: calc(50vh - 100px); 
+	left: calc(50vw - 200px);
+}
+
+#leader-container h1 {
+	font-family: 'League Spartan';
+	font-size: 30pt;
+	font-weight: 550;
+	text-align: center;
+	/* color: #EFF291; */
+	color: white;
+}
+
+#icon-container {
+	position: absolute;
+	bottom: 20px;
+	width: 200px;
+	left: calc(50vw - 100px);
+}
+
+#about-section {
+	display: flex;
+	gap: 20px;
+	min-height: 100vh;
+}
+
+#about-section figure {
+	padding: 5% 5% 10% 5%;
+	min-width: 30%;
+	opacity: 0;
+	transform: translateX(-200px);
+	transition: 2s all ease;
+}
+
+#about-section figure.active {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+#about-section figure img {
+	max-width: 100%;
+	border-radius: 25%;
+}
+
+#about-section div {
+	padding: 5% 5% 10% 5%;
+}
+
+#skills-section {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 20px;
+	height: 100vh;
+	background-color: #9aabaf;	
+}
+
+#skills-section p {
+	color: #F2EC9B;
+}
+
+#skills-section h1 {
+	color: #F2EC9B;
+}
+
+#skills-section div.left-col {
+	padding: 5% 0 10% 5%;
+	min-width: 30%;
+}
+
+#skills-section div.right-col {
+	padding: 5% 5% 10% 5%;
+}
+
+#skills-section ul {
+	list-style: none;
+}
+
+.skill-bars li {
+	display: flex;
+}
+
+.skill-bars p {
+	color: black !important;
+	font-size: 12pt;
+	font-weight: 550;
+	margin-top: 4px;
+	width: 100px;
+}
+
+.skill-bars > * {
+	margin-bottom: 10px;
+}
+
+.skill-bar {
+	width: 80%;
+	height: 20px;
+	margin: 0 20px 0 20px;
+	background-color: slategrey;
+}
+
+.skill-bar-fill {
+	background-color: #736243;
+	height: 20px;
+	z-index: 2;
+	width: 0%;
+	transition: 2s all ease;
+}
+
+.fill-25 {
+	width: 25%;
+}
+
+.fill-50 {
+	width: 50%;
+}
+
+.fill-75 {
 	width: 75%;
 }
 
-#ProfileImageContainer {
-	vertical-align: top;
-	display: inline-block;
-	width: 250px;
-	height: 300px;
-	background-image: url('http://placehold.it/250x300');
-	background-repeat: no-repeat;
-	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-}
-
-/*########### Buttons ###########*/
-#exploreWebsite {
-	margin: 20px auto 20px auto;
-	box-shadow: none;
-}
-
-@media all and (min-height: 780px){
-	#exploreWebsite{display: none;}
-}
-
-#BackUpButton {
-	position: fixed;
-	top: 40%;
-	right: 2px;
-	z-index: 999;
-}
-
-#BackUpButton a { 
-  display: block; 
-  background-color: rgba(39, 34, 62, 1);
-  height: 25px; 
-  width: 100px; 
-  padding: 8px 16px;
-  color: #fff; 
-  font-family: Arial, sans-serif; 
-  font-size: 25px; 
-  font-weight: bold; 
-  font-family: flamenco;
-  text-decoration: none;
-  border-top: solid 1px #333;
-  border-bottom: solid 1px #333;
-  border-left: solid 1px #333;
-}
-
-#BackUpButton a:hover { 
-  -webkit-transition: background-color 1s ease 0s;
-  background: slategrey;
-}
-
-/*########### Footer ###########*/
-
-#FooterContainer {
-	background-color: rgba(39, 34, 62, 1);
-	padding: 15px;
-}
-
-#FooterContainer ul {
-	margin: 5px 80px 0px 80px;
-}
-
-#FooterContainer a:hover {
-	color: slategrey;
-}
-
-#FooterContainer p {
+#contact-section {
+	background-color: #736243;
+	padding: 150px;
 	text-align: center;
-	color: #fff;
+}
+
+footer {
+	height: 100px;
+	padding: 50px 50px 0 50px;
+	text-align: center;
+}
+
+footer .horizontal-list {
+	margin-top: 20px;
 }
