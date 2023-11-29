@@ -1,0 +1,12 @@
+{
+    "translations": [
+        {
+            "key": "example",
+            "value": "example"
+        },
+        {
+            "key": "aboutme",
+            "value": "about me"
+        }
+    ]
+}

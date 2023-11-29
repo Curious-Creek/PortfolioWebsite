@@ -1,3 +1,34 @@
+let language;
+
+setBrowserLanguage();
+insertTranslations();
+
+function setBrowserLanguage() {
+    language = navigator.language.startsWith("nl") ? "nl" : "en";
+}
+
+function insertTranslations() {
+    fetch("./translations." + language + ".json")
+        .then((res) => {
+        return res.json();
+    })
+    .then((data) => {
+        //var translations = JSON.parse(data);
+        console.log(data.translations);
+        var elements = document.querySelectorAll('[id^="tl"]');
+        elements.forEach(element => {
+            var elementKey = element.id.split('-')[1];
+            console.log(elementKey);
+            var translation = data.translations.find(x => x.key === elementKey);
+            if (translation) {
+                element.innerHTML = ""
+            }
+            console.log(translation);
+        });
+        console.log(elements);
+    });
+}
+
 function scrollAnimations() {
     var navElem = document.querySelector("nav");
 
